@@ -19,17 +19,37 @@
         </nav>
     </header>
     <div class="section1">
-        <div class="container">
+        <div id='container' class="containerfirst">
             <img id="dragos" src="sources/dragos.webp">
+            <div class="logocontainer">
+                <div class="lighting">
+                    <img class="thunder first" src="sources/Black_Lightning.svg">
+                    <img class="thunder second" src="sources/Black_Lightning.svg">
+                    <img class="thunder third" src="sources/Black_Lightning.svg">
+                    <img class="thunder fourth" src="sources/Black_Lightning.svg">
+                </div>
+                <div class="letters">
+                    <h3 id="D">D</h3>
+                    <h3 id="M">M</h3>
+                    <h3 id="P">C</h3>
+                    <h3 id="C">P</h3>
+                </div>
+            </div>
         </div>
         <div class="container2">
         <div class="textblockcontainer">
             <h1 id="titlu">Lorem, ipsum dolor.</h1><h1 id="quote">"lorem lorem lorem"</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis enim dolorem officiis fugiat mollitia, quaerat, explicabo tempora ad cum doloribus neque quisquam velit architecto. Alias natus quam dolorum blanditiis similique.</p>
+            <br>
+            <p id="pcont2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus perferendis facilis illum ex consectetur dignissimos quas deserunt molestias suscipit id facere asperiores porro totam, quos et quis aperiam inventore nisi sit error fuga ratione vel? Impedit alias ipsa doloribus inventore optio saepe ducimus dolores mollitia laboriosam, eveniet fugit accusantium debitis.</p>
         </div> 
         </div>
-        <div class="container3">
+        <div id='container3' class="container3">
             <img id="dragos2" src="sources/dragos2.webp">
+            <div class="textblockcontainer2">
+                <h1 id="titlu2">Lorem, ipsum dolor.</h1><h1 id="quote2">"lorem lorem lorem"</h1>
+                <br>
+                <p id="pcont3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus perferendis facilis illum ex consectetur dignissimos quas deserunt molestias suscipit id facere asperiores porro totam, quos et quis aperiam inventore nisi sit error fuga ratione vel? Impedit alias ipsa doloribus inventore optio saepe ducimus dolores mollitia laboriosam, eveniet fugit accusantium debitis.</p>
+            </div> 
         </div>
     </div>
     <script src="app.js"></script>
@@ -45,19 +65,37 @@
         var tl = new TimelineMax({onUpdate:updatePercentage});
         var tl2 = new TimelineMax();
         var tl3 = new TimelineMax();
+        var tl4 = new TimelineMax();
+        var tl5 = new TimelineMax();
          const controller = new ScrollMagic.Controller();
 
-         tl2.from(".container2", .9, {x:-4500});
+         tl2.from(".container2", .9, {backgroundPositionX:0});
          tl3.from("#titlu", .8, {opacity:0, x:-400,delay: .8});
          tl3.from("#quote", .9, {opacity:0, x:200});
-         tl2.from("p", .9, {opacity:0, delay: .8});
+         tl2.from("#pcont2", .9, {opacity:0, delay: .8});
+         tl4.from("#container3", .9, {backgroundPositionX:1400});
+         tl5.from("#container", .9, {backgroundPositionX:-2000});
+         tl5.from(".logocontainer", .4,{scale:1.4});
+
          const scene2 = new ScrollMagic.Scene({
              triggerElement: ".container",
          })
-
-         
          .setTween(tl2)
            .addTo(controller);
+
+           const scene4 = new ScrollMagic.Scene({
+             triggerElement: ".container2",
+             triggerHook: "onLeave",
+         })
+         .setTween(tl4)
+           .addTo(controller);
+
+           const scene5 = new ScrollMagic.Scene({
+             triggerElement: "body",
+         })
+         .setTween(tl5)
+           .addTo(controller);
+        
 
          function updatePercentage() {
              tl.progress();

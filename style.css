@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Teko:wght@300&display=swap');
 
 *{
     list-style: none;
@@ -10,12 +10,15 @@
 body{
     font-family: sans-serif;
     overflow-x: hidden;
+    display: block;
 }
 
 ul{
    width: 100%;
    display: flex;
    position: fixed;
+   z-index: 9;
+   background-color: white;
 }
 
 li{
@@ -36,9 +39,12 @@ li.active{
 }
 
 .container{
-    background: linear-gradient(to bottom right, #ffffff 0%, #ffffff 50%, #000000 50%, #000000 100%);
+    background-image: url(sources/background2.svg);
     height: 80%;
     object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: 110%;
+    width: 100%;
 }
 
 #dragos{
@@ -57,6 +63,7 @@ li.active{
 
 .container3{
     overflow: hidden;
+    width: 100%;
 }
 
 h4{
@@ -70,7 +77,7 @@ h4{
     object-fit: contain;
     background-repeat: no-repeat;
     background-size: 110%;
- 
+    width: 100%;
 }
 
 
@@ -87,8 +94,166 @@ h4{
 
 .container3{
     background-image: url(sources/background2.svg);
-    height: 80%;
-    object-fit: contain;
     background-repeat: no-repeat;
     background-size: 110%;
+    height: 80%;
+    object-fit: contain;
+    width: 100%;
+    
+}
+
+#container{
+    background-image: url(sources/background2.svg);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    height: 80%;
+    object-fit: contain;
+    width: 100%;
+}
+
+p{
+    color: white;
+}
+
+#titlu, #quote{
+    color: black;
+}
+
+#titlu2, #quote2{
+    color: red;
+}
+
+.textblockcontainer2{
+    width: 30rem;
+    padding: 50;
+    position: relative;
+    z-index: 2;
+    top: -32rem;
+    left: 22rem;
+}
+
+.section1{
+    overflow-x: hidden;
+}
+
+.thunder{
+    width: 70%;
+    height: auto;
+    filter: brightness(0) invert(1);
+}
+
+.logocontainer{
+    width: 100%;
+}
+
+#container{
+    display: flex;
+    align-items: center;
+}
+
+.lighting{
+    max-width: 100;
+    display: flex;
+}
+
+.lighting:nth-child(first){
+    transform: translateX(calc(95px * 0));
+}
+
+.thunder.first{
+    transform: rotate(314deg);
+    position: relative;
+    top: -5rem;
+    transition: all 500ms ease;
+}
+
+.thunder.first:hover{
+    transform: rotate(314deg) scale(1.1);
+}
+
+.thunder.second{
+    transform: rotate(40deg) scaleX(-1);
+    position: relative;
+    top: -5rem;
+    left: 4rem;
+    transition: all 500ms ease;
+}
+
+.thunder.second:hover{
+    transform: rotate(40deg) scaleX(-1) scale(1.1);
+}
+
+
+.thunder.third{
+    transform: rotate(135deg);
+    position: relative;
+    top: 5rem;
+    transition: all 500ms ease;
+}
+
+.thunder.third:hover{
+    transform: rotate(135deg) scale(1.1);
+}
+
+.thunder.fourth{
+    transform: rotate(226deg) scaleX(-1);
+    position: relative;
+    top: 5rem;
+    left: -13rem;
+    transition: all 500ms ease;
+}
+
+.thunder.fourth:hover{
+    transform: rotate(226deg) scaleX(-1) scale(1.1);
+}
+
+.logocontainer{
+    position: relative;
+    top: 4rem;
+    left: 16rem;
+}
+
+.thunder{
+    z-index: 4;
+}
+
+.thunder:hover{
+    filter: invert(48%) sepia(129%) saturate(5975%) hue-rotate(10deg) brightness(118%) contrast(119%);
+}
+
+.letters{
+    color: white;
+    font-family: 'Black Ops One', cursive;
+    position: relative;
+    width: 100%;
+    font-size: 3rem;
+    display: flex;
+}
+
+#D{
+    position: relative;
+    top: -6rem;
+}
+
+#M{
+    position: relative;
+    top: -13rem;
+    left: 2.2rem;
+}
+
+#P{
+    position: relative;
+    top: 1rem;
+}
+
+#C{
+    position: relative;
+    left: 3rem;
+    top: -6rem;
+}
+/*==========================MEDIA QUERIES====================*/
+
+@media and screen (min width:600px) and (max width:1000px){
+
+
 }
