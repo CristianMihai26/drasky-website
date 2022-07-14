@@ -9,7 +9,7 @@
 
 body{
     font-family: sans-serif;
-    overflow-x: hidden;
+
     display: block;
 }
 
@@ -43,27 +43,30 @@ li.active{
     height: 80%;
     object-fit: contain;
     background-repeat: no-repeat;
-    background-size: 110%;
-    width: 100%;
+    background-size: 100%;
 }
 
 #dragos{
-    width: auto;
-    height: 100%;
+    width: 60%;
     position: relative;
     left: -14rem;
 }
 
 #dragos2{
-    width: auto;
-    height: 100%;
-    position: relative;
-    left: 53rem;
+    width: 40%;
+    height: auto;
 }
 
 .container3{
-    overflow: hidden;
     width: 100%;
+    background-image: url(sources/background2.svg);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    object-fit: contain;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
 }
 
 h4{
@@ -73,11 +76,12 @@ h4{
 
 .container2{
     background-image: url(sources/background1.svg);
-    height: 80%;
+    height: auto;
     object-fit: contain;
     background-repeat: no-repeat;
     background-size: 110%;
     width: 100%;
+    overflow: hidden;
 }
 
 
@@ -96,7 +100,6 @@ h4{
     background-image: url(sources/background2.svg);
     background-repeat: no-repeat;
     background-size: 110%;
-    height: 80%;
     object-fit: contain;
     width: 100%;
     
@@ -106,9 +109,49 @@ h4{
     background-image: url(sources/background2.svg);
     background-repeat: no-repeat;
     background-size: 110%;
-    height: 80%;
     object-fit: contain;
     width: 100%;
+    height: auto;
+    display: flex;
+    overflow: hidden;
+}
+
+.cta1{
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 7rem;
+    left: -8rem;
+}
+
+#call{
+    padding: 5px;
+    font-size: 2.2rem;
+    left: -2rem;
+    top: -1rem;
+    position: relative;
+    display: flex;
+}
+
+#call:hover{
+    cursor: pointer;
+}
+
+span{
+    border: 2px solid;
+    border-radius: 0px 20px 20px 0px;
+    padding: 5px;
+    background-color: #ec2727;
+}
+
+#text{
+    padding: 5px;
+    border: 2px solid;
+    border-radius: 20px 0px 0px 20px
 }
 
 p{
@@ -117,24 +160,24 @@ p{
 
 #titlu, #quote{
     color: black;
+    width: 100%;
+    height: auto;
 }
 
 #titlu2, #quote2{
     color: red;
+    width: 100%;
+    height: auto;
 }
 
 .textblockcontainer2{
-    width: 30rem;
+    width: 30rem; 
     padding: 50;
     position: relative;
-    z-index: 2;
-    top: -32rem;
-    left: 22rem;
+    left: 14rem;
 }
 
-.section1{
-    overflow-x: hidden;
-}
+
 
 .thunder{
     width: 70%;
@@ -225,7 +268,7 @@ p{
     color: white;
     font-family: 'Black Ops One', cursive;
     position: relative;
-    width: 100%;
+    max-width: 100;
     font-size: 3rem;
     display: flex;
 }
@@ -253,7 +296,29 @@ p{
 }
 /*==========================MEDIA QUERIES====================*/
 
-@media and screen (min width:600px) and (max width:1000px){
+@media screen and (min-width:2000px) {
+    .letters{
+        transform: scale(2);
+        left: 0rem;
+        top: 5rem;
+    }
+    
+    .lighting{
+        transform: scale(2);
+    }
 
+   #buton1, #buton2, #buton3, #buton4, #buton5{
+        transform: scale(2);
+    }
+
+    .textblockcontainer{
+        font-size: 200%;
+        width: 60%;
+        padding: 200px;
+    }
+
+    #dragos2{
+        left: 88rem;
+    }
 
 }

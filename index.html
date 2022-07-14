@@ -33,6 +33,9 @@
                     <h3 id="M">M</h3>
                     <h3 id="P">C</h3>
                     <h3 id="C">P</h3>
+                    <div class="cta1">
+                        <h4 id="call"><c id="text">Get</c><span>Productive</span></h4>
+                    </div>
                 </div>
             </div>
         </div>
@@ -44,12 +47,12 @@
         </div> 
         </div>
         <div id='container3' class="container3">
-            <img id="dragos2" src="sources/dragos2.webp">
             <div class="textblockcontainer2">
                 <h1 id="titlu2">Lorem, ipsum dolor.</h1><h1 id="quote2">"lorem lorem lorem"</h1>
                 <br>
                 <p id="pcont3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus perferendis facilis illum ex consectetur dignissimos quas deserunt molestias suscipit id facere asperiores porro totam, quos et quis aperiam inventore nisi sit error fuga ratione vel? Impedit alias ipsa doloribus inventore optio saepe ducimus dolores mollitia laboriosam, eveniet fugit accusantium debitis.</p>
             </div> 
+            <img id="dragos2" src="sources/dragos2.webp">
         </div>
     </div>
     <script src="app.js"></script>
@@ -84,8 +87,8 @@
            .addTo(controller);
 
            const scene4 = new ScrollMagic.Scene({
-             triggerElement: ".container2",
-             triggerHook: "onLeave",
+             triggerElement: ".container3",
+             triggerHook: "onEnter",
          })
          .setTween(tl4)
            .addTo(controller);
