@@ -62,3 +62,65 @@ function mouseOver5(){
 function mouseOut5(){
     document.getElementById('navbtn5').style.backgroundPositionY = "-80px";
 }
+
+
+
+const icon = document.querySelector('.a')
+icon.onmouseover = function() {grow()};
+icon.onmouseout = function() {shrink()};
+
+function grow(){
+    icon.style.transform = "scale(1.1)"
+}
+
+function shrink(){
+   icon.style.transform = "scale(1)"
+}
+
+const icon2 = document.querySelector('.b')
+icon2.onmouseover = function() {grow2()};
+icon2.onmouseout = function() {shrink2()};
+
+function grow2(){
+    icon2.style.transform = "scale(1.1)"
+}
+
+function shrink2(){
+   icon2.style.transform = "scale(1)"
+}
+
+const icon3 = document.querySelector('.c')
+icon3.onmouseover = function() {grow3()};
+icon3.onmouseout = function() {shrink3()};
+
+function grow3(){
+    icon3.style.transform = "scale(1.1)"
+}
+
+function shrink3(){
+   icon3.style.transform = "scale(1)"
+}
+
+const icon4 = document.querySelector('.d')
+icon4.onmouseover = function() {grow4()};
+icon4.onmouseout = function() {shrink4()};
+
+function grow4(){
+    icon4.style.transform = "scale(1.1)"
+}
+
+function shrink4(){
+   icon4.style.transform = "scale(1)"
+}
+
+const icon5 = document.querySelector('.e')
+icon5.onmouseover = function() {grow5()};
+icon5.onmouseout = function() {shrink5()};
+
+function grow5(){
+    icon5.style.transform = "scale(1.1)"
+}
+
+function shrink5(){
+   icon5.style.transform = "scale(1)"
+}
