@@ -529,3 +529,145 @@ p{
     }
 
 }
+
+@media screen and (max-width:390px){
+    .bottom{
+        transform: scale(0.8);
+    top: -1rem;
+    left: 8rem;
+    }
+
+    .logocontainer{
+        position: relative;
+    top: 6rem;
+    left: -4rem;
+    height: auto;
+    }
+}
+
+@media screen and (max-width:370px){
+    .bottom{
+        transform: scale(0.7);
+    top: 0rem;
+    left: 8rem;
+    }
+
+    .logocontainer{
+        position: relative;
+    top: 6rem;
+    left: -4rem;
+    height: auto;
+    }
+
+    #dragos2{
+        width: 400;
+        height: 300;
+        top: 8rem;
+        left: -13rem;
+        position: relative;
+        transform: scaleX(1);
+    }
+
+    .textblockcontainer h1{
+        position: relative;
+    left: 3rem;
+    font-size: 16;
+    }
+
+    .textblockcontainer p{
+        position: relative;
+    left: 3rem;
+    font-size: 16;
+    }
+
+    .bottom{
+        transform: scale(0.6);
+    top: -1.2rem;
+    left: 8rem;
+    }
+
+    .lighting{
+        left: -0.7rem;
+    }
+
+    .letters{
+        left: -6.4rem;
+    }
+}
+
+@media screen and (max-width:340px){
+    .bottom{
+        transform: scale(0.7);
+    top: 0rem;
+    left: 8rem;
+    }
+
+    .logocontainer{
+        position: relative;
+    top: 6rem;
+    left: -5rem;
+    height: auto;
+    }
+
+    .wrappericons{
+        transform: scale(0.9);
+    }
+
+    #call{
+        background-color: black;
+    border-radius: 23px;
+}
+
+.bottom{
+    transform: scale(0.6);
+    top: -1.2000000000000002rem;
+    left: 3rem;
+}
+
+    #dragos2{
+        width: 400;
+        height: 300;
+        top: 8rem;
+        left: -13rem;
+        position: relative;
+        transform: scaleX(1);
+    }
+
+    .textblockcontainer h1{
+        position: relative;
+    left: 3rem;
+    font-size: 16;
+    }
+
+    .textblockcontainer p{
+        position: relative;
+        left: 3rem;
+        font-size: 13px;
+    }
+
+    .textblockcontainer{
+        padding: 15;
+        position: relative;
+        left: -2.5rem;
+    }
+    
+    #dragos{
+        left: -5rem;
+    top: 1rem;
+    width: 90%;
+    }
+
+    .bottom{
+        transform: scale(0.6);
+    top: -1.2rem;
+    left: 8rem;
+    }
+
+    .lighting{
+        left: -1.6rem;
+    }
+
+    .letters{
+        left: -6.4rem;
+    }
+}

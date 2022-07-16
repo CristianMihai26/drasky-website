@@ -64,7 +64,6 @@ function mouseOut5(){
 }
 
 
-
 const icon = document.querySelector('.a')
 icon.onmouseover = function() {grow()};
 icon.onmouseout = function() {shrink()};
@@ -123,4 +122,4 @@ function grow5(){
 
 function shrink5(){
    icon5.style.transform = "scale(1)"
-}
+} 
