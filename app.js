@@ -1,4 +1,25 @@
 //===================HEADER NAV=================//
+
+//==================BURGER====================//
+
+let burger = document.querySelector('.burger');
+
+burger.onclick = function(){
+    burger.classList.toggle('active');
+    document.getElementById('navbtn1').classList.toggle('active');
+    document.getElementById('navbtn2').classList.toggle('active'); 
+    document.getElementById('navbtn3').classList.toggle('active'); 
+    document.getElementById('navbtn4').classList.toggle('active'); 
+    document.getElementById('navbtn5').classList.toggle('active');   
+}
+
+/*function myFunction(){
+    if (burger='burger' + 'active'){
+        document.getElementById('navbtn1').classList.toggle('active');   
+    } 
+}*/
+
+
 //====================BUTON1=====================//
 
 document.getElementById('buton1').onmouseover = function() {mouseOver1()};
