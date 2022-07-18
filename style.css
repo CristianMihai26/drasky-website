@@ -870,12 +870,12 @@ p{
 @media screen and (max-width:330px) {
 
     .burger{
-        left: 17.7rem;
+        left: 16.7rem;
         top: 10px;
     }
 
     .burger.active{
-        left: 17.7rem;
+        left: 16.7rem;
         top: 10px;
     }
 }
