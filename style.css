@@ -691,9 +691,7 @@ p{
 }
 
 @media screen and (max-width:768px){
-    .section1{
-       
-    }
+
 
     nav{
         height: 8vh;
@@ -805,5 +803,66 @@ p{
     
     .line1, .line2, .line3 {
         transition: all 300ms ease;
+    }
+}
+
+@media screen and (max-width:450px) {
+
+    .burger{
+        left: 21.7rem;
+    }
+
+    .burger.active{
+        left: 21.7rem;
+    }
+
+    .lnav2.active {
+        top: 12.7vh;
+        display: flex;
+        opacity: 100;
+        background-color: white;
+    }
+
+    .lnav3.active {
+        top: 17.2vh;
+        display: flex;
+        opacity: 100;
+        background-color: white;
+    }
+
+    .lnav4.active {
+        top: 21.9vh;
+    
+}
+
+.lnav5.active {
+    top: 26.7vh;
+    display: flex;
+    opacity: 100;
+    background-color: white;
+}
+
+#navbtn1, #navbtn2, #navbtn3, #navbtn4, #navbtn5 {
+    position: absolute;
+    right: 0px;
+    position: absolute;
+    right: -79px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transition: all 300ms ease;
+}
+}
+
+@media screen and (max-width:380px) {
+
+    .burger{
+        left: 19.7rem;
+        top: 10px;
+    }
+
+    .burger.active{
+        left: 19.7rem;
+        top: 10px;
     }
 }
