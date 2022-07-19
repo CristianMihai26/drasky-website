@@ -690,7 +690,7 @@ p{
     }
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:650px){
 
 
     nav{
@@ -701,6 +701,9 @@ p{
     z-index: 20;
     }
 
+    .lnav5.active{
+        border-radius: 0px 20px;
+    }
    
 
 
@@ -878,4 +881,47 @@ p{
         left: 16.7rem;
         top: 10px;
     }
+}
+
+@media screen and (max-width:450px){
+    li{
+        background-image: radial-gradient(white, white);
+    }
+}
+
+@media screen and (max-width:330px) {
+
+    .lnav5.active {
+        top: 32.7vh;
+        display: flex;
+        opacity: 100;
+        background-color: white;
+    }
+
+    .lnav4.active {
+        top: 25.9vh;
+    }
+
+    .lnav3.active {
+        top: 19.2vh;
+        display: flex;
+        opacity: 100;
+        background-color: white;
+    }
+
+    .lnav2.active {
+        top: 12.7vh;
+        display: flex;
+        opacity: 100;
+        background-color: white;
+    }
+
+    .lnav1.active {
+        padding: 1;
+        top: 6vh;
+        display: flex;
+        opacity: 100;
+        background-color: white;
+    }
+    
 }

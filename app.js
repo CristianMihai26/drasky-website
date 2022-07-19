@@ -25,7 +25,8 @@ burger.onclick = function(){
 document.getElementById('buton1').onmouseover = function() {mouseOver1()};
 document.getElementById('buton1').onmouseout = function() {mouseOut1()};
 
-function mouseOver1() {
+
+function mouseOver1(){
     document.getElementById("navbtn1").style.backgroundPositionY= "0px";
 }
 
