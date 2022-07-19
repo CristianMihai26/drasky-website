@@ -13,6 +13,8 @@ body{
     display: block;
 }
 
+
+
 .wrappericons{
     display: flex;
     color: white;
@@ -521,7 +523,7 @@ p{
     #dragos2{
         width: 400;
         height: 300;
-        top: 656.5;
+        top: 854.5px;
         left: -5rem;
         position: absolute;
         transform: scaleX(-1);
@@ -580,7 +582,7 @@ p{
     #dragos2{
         width: 400;
         height: 300;
-        top: 8rem;
+        top: 10rem;
         left: -13rem;
         position: relative;
         transform: scaleX(1);
@@ -691,6 +693,10 @@ p{
 }
 
 @media screen and (max-width:650px){
+
+    .textblockcontainer{
+        width: 70%;
+    }
 
 
     nav{
